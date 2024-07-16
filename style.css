@@ -1,0 +1,81 @@
+/* CSS */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registration-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-group label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #23527c;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 600px;
+    }
+    .form-row {
+      flex-direction: column;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      max-width: 400px;
+    }
+    .form-group {
+      margin-bottom: 5px;
+    }
+  }
