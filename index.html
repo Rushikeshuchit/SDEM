@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 	<title>Registration Form</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@427&display=swap" rel="stylesheet">
 	
     <!-- <script type="text/JavaScript">
        document.addEventListener("contextmenu", function (e){
@@ -16,9 +19,29 @@
 
 </head>
 <body>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Clients</a>
+		<a href="#">Contact</a>
+	  </div>
+	  <div id="main">
+		<h2>Sidenav Push Example</h2>
+		<p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+	  </div>
+
+	  
+		 
+		 
+
+
+
+
+
 	<header class="home1">
-		<img src="https://blogger.googleusercontent.com/img/a/AVvXsEgbp56Fpc2_beCSvW8qU1y2FMoCSTCVaZInnrPcS6No73DKhumNAa8nygfNoOpLvyvDiPcRURNQ5JZplfNJHFCFKQoGD5G6rsStfB3n1NyHzpa1UHp-LrsmNYpVrWfQWAcRdtAw_5arhJ8_rynjRHf9pAVLI39ufHFScm8cGvmn2iloZUrJ1i_XkjoLK1gB" alt="logo">
-		<p>STUDENT DATA ENTRY MANAGER</p>	
+		<h2><b>STUDENT DATA ENTRY MANAGER</b></h2>	
 	</header>
 
 
@@ -49,7 +72,20 @@
 		</div>
 	</div>
 
-    
+	<script>
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "250px";
+		  document.getElementById("main").style.marginLeft = "250px";
+		  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+		
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		  document.getElementById("main").style.marginLeft= "0";
+		  document.body.style.backgroundColor = "white";
+		}
+		</script>
+		
+</body>   
 </head>	
-</body>
 </html>
