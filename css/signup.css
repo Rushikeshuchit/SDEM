@@ -1,3 +1,4 @@
+
 /* CSS */
 .container {
     max-width: 800px;
@@ -121,12 +122,12 @@ body{
   margin-left: 50px;
 }
 
-#main {
+/* #main {
   transition: margin-left .5s;
   padding: 16px;
-}
+} */
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 300px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
@@ -138,7 +139,7 @@ body{
 
 
 
-@media screen and (min-width: 819px) {
+@media screen and (min-width: 300px) {
     .home1 img{
       width:9%;
       height: 1%;
@@ -146,16 +147,7 @@ body{
       align-self: center;
     }
 }
-    @media screen and (min-width: 819px) {
-
-      .home1 p{
-        padding-left: 1%;
-        font-size: 10px;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
     
-    
-  }
 
 header.home1{
     background-color: #32C4FF;
@@ -174,9 +166,11 @@ header.home1{
 }
 
 
-.home1 p{
-    padding-left: 1%;
-    font-size: 35px;
+.home1 h2{
+
+    margin-left: 10px;
+    padding-top: 10px;
+    font-size: 28px;
     font-family:Arial Narrow Bold;
     align-self: center;
     font-family: "Inter", sans-serif;
@@ -184,5 +178,14 @@ header.home1{
     font-weight: 427;
     font-style: normal;
     font-variation-settings: "slnt" 0;
+}
+
+@media screen and (min-width: 300px) {
+
+  .home1 h2{
+    padding-left: 1%;
+    font-size: 22px;
+    font-family:"Poppins", sans-serif;
+}
 }
 
