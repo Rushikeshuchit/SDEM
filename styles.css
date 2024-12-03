@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #100422;
+}
+
+header {
+  background-color: #5f1212;
+  color: rgb(221, 191, 191);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* Aligns navbar items to the right */
+}
+
+nav ul {
+  list-style-type: none;
+  font-size: 20px;
+  padding-right: 30px;
+  margin-right: 30%; /* Remove default margin */
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 40px; /* Add margin to the left of each item */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.horizontal-divs {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.box {
+  width: 45%;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.carousel-images {
+  display: flex;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: auto;
+}
