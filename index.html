@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="horizontal-divs">
+            <div class="box" style="background-color: lightblue;">Div 1</div>
+            <div class="box" style="background-color: lightgreen;">Div 2</div>
+        </section>
+
+        <section class="carousel">
+            <div class="carousel-images">
+                <img src="https://img.freepik.com/free-vector/set-different-bubbles-chat-messenger-app_23-2147779903.jpg?semt=ais_hybrid" alt="Image 1">
+                <img src="https://img.freepik.com/free-vector/bubbles-chat-messenger-app-flat-style_23-2147793419.jpg?semt=ais_hybrid" alt="Image 2">
+                <img src="https://img.freepik.com/free-vector/flat-design-whatsapp-chat-template_23-2151240184.jpg?t=st=1733236816~exp=1733240416~hmac=28e5c91c41e616d9a340a1c1508affeb03dadfb6d2366b3258e11bf4426cd8bd&w=740" alt="Image 3">
+            </div>
+        </section>
+    </main>
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel-images img');
+        const totalImages = images.length;
+
+        function showNextImage() {
+            images[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % totalImages;
+            images[currentIndex].style.display = 'block';
+        }
+
+        // Initialize carousel
+        images.forEach((img, index) => {
+            img.style.display = index === 0 ? 'block' : 'none';
+        });
+
+        setInterval(showNextImage, 3000); // Change image every 3 seconds
+    </script>
+</body>
+</html>
