@@ -1,2 +1,3 @@
-# SDEM
-1. Project Name:  Student data entry management 15/07/2024
+# Pinger
+1. Project Name:  Pinger( A web chat app)
+2. - In this web app, any registered user can chat with friends. 
